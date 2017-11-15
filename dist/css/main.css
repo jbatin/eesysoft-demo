@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul, li {
+  list-style: none; }
+
+html {
+  /*font-size: 100%;*/ }
+
+body {
+  width: auto;
+  margin: 0;
+  /*font-family: 'Average';*/
+  /*font-family: 'Arial';*/
+  /*padding-top: 5rem;*/ }
+
+a {
+  text-decoration: none; }
+
+/*.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}*/
+.main {
+  width: 80vw; }
+
+.affix {
+  top: 0;
+  width: 100%; }
+
+nav[data-toggle='toc'] {
+  margin-top: 30px; }
+
+/* small screens */
+@media (max-width: 768px) {
+  /* override the Affix plugin so that the navigation isn't sticky */
+  nav.affix[data-toggle='toc'] {
+    position: static; }
+  /* PICK ONE */
+  /* don't expand nested items, which pushes down the rest of the page when navigating */
+  nav[data-toggle='toc'] .nav .active .nav {
+    display: none; }
+  /* alternatively, if you *do* want the second-level navigation to be shown (as seen on this page on mobile), use this */
+  /*nav[data-toggle='toc'] .nav .nav {
+    display: block;
+  }*/ }
+
+.content {
+  font-size: 110%;
+  line-height: 1.8em; }
+
+img {
+  /*display: inline-block;*/
+  max-width: 100%;
+  /*30vw;*/ }
+
+h2 {
+  margin-top: 80px; }
+
+h3 {
+  margin-top: 40px; }
+
+ul, li {
+  list-style: initial; }
